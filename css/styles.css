@@ -4,14 +4,14 @@ html {
 
 h1 {
  color: rgb(255, 255, 255);
- filter: drop-shadow(10px 10px 4px #000000);
+ filter: drop-shadow(5px 5px 4px #000000);
  font-size: 100px;
- font-family: unset;
+ font-family: Georgia, 'Times New Roman', Times, serif;
  text-align: center;
 }
 
 p {
-    font-size: 150%;
+    font-size: 200%;
     margin: 0%;
 }
 .slategrey-links{
@@ -30,7 +30,7 @@ p {
 
 .title {
     position: absolute;
-    top: 20%;
+    top: -400%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -40,21 +40,23 @@ p {
     display: flex;
     flex-direction: row;
     justify-items: be;
-    font-size: 150%;
+    font-size: 175%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 400px;
+    margin-right: 400px;
     border-top-left-radius:     10px 10px;
     border-top-right-radius:    10px 10px;
 }
 .txt {
     background-color :rgb(42, 67, 136);
     padding: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
     font-size: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
@@ -64,12 +66,311 @@ p {
 .row {
     text-align: center;
     background-color: white;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 400px;
+    margin-right: 400px;
     padding-bottom: 30px;
 }
 
-.greyscale {
+.links {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -60px;
+    filter: drop-shadow(3px 5px 6px);
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top:-100px;
+}
+
+.linkone {
+    color: white;
+}
+
+.linktwo {
+    color: white;
+}
+
+.linkthree {
+    color: white;
+}
+
+.main {
+    background-color: rgb(42, 67, 136);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.sub {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    margin-left: 525px;
+    margin-right: 480px;
+    filter: drop-shadow(3px 5px 6px);
+}
+
+.water {
+    color: white;
+}
+
+.hotel {
+    color: white;
+    margin-left: 50px;
+}
+
+.trip {
+    color: white;
+    margin-left: 50px;
+}
+
+.pets {
+    color: white;
+    margin-left: 60px;
+}
+
+.uni {
+    color: white;
+}
+
+.youtubeone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.youtubetwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.youtubethree {
+    display: flex;
+    flex-direction: row;
+}
+
+.subheading {
+    background-color: rgb(255, 255, 255);
+    font-size: 200%;
+    padding: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    border-top-left-radius:     10px 10px;
+    border-top-right-radius:    10px 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subtitle {
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(5px 5px 0px #fff2b9);
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media all and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 125%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.box {
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.subtext {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -500px;
+}
+
+.foodtext {
+    margin-top: 500px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+
+.sosmed {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-instagram {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-google {
+    background: #3B5998;
+    color: white;
+  }
+  
+
+.contact {
     font-size: 50px;
-    ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+}
+
+.caption {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-items: be;
+    font-size: 175%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 300px;
+    border-top-left-radius:     10px 10px;
+    border-top-right-radius:    10px 10px;
+}
+
+.locations {
+    margin-top: -400px;
+}
+
+.list {
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.body-text {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
