@@ -291,7 +291,7 @@ img {vertical-align: middle;}
     margin-left: 400px;
     margin-right: 400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
@@ -304,6 +304,7 @@ img {vertical-align: middle;}
     text-align: center;
     text-decoration: none;
     display: flex;
+    margin-right: 30px;
   }
   
   /* Add a hover effect if you want */
